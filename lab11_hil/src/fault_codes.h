@@ -1,0 +1,17 @@
+#ifndef FAULT_CODES_H
+#define FAULT_CODES_H
+
+#include <stdint.h>
+
+typedef enum{
+    FAULT_HEALTHY = 0x00,
+    FAULT_ESTOP = 0x01,
+    FAULT_PRESSURE_OVER = 0x02,
+    FAULT_PRESSURE_UNDER = 0x04,
+    FAULT_PRESSURE_SENSOR = 0x08,
+    FAULT_TEMPERATURE_OVER = 0x10,
+    FAULT_TEMPERATURE_UNDER = 0x20,
+    FAULT_TEMPERATURE_SENSOR = 0x40,
+} errorCode;
+
+#endif
